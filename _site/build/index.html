@@ -1,20 +1,31 @@
----
-layout: default
-title: Best Bike Shop Ever
----
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Planet Argon Bicycles - since 1916</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,600' rel='stylesheet' type='text/css'>
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+  </head>
+  
+  <body>
+    
+    <nav>
+      <div class="container">
+        <a href="index.html" class="pull-left logo" title="Planet Argon Bicyclesunicycle"><span>Planet Argon Bicycles</span></a>
+        <ul class="nav nav-pills pull-right">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#bikes">Bikes</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
     
     <div class="hero-unit">
       <div class="container">
         <div class="row-fluid">
           <div class="span6 offset6">
-            <h1>
-              
-              {% if page.headline %}
-                {{ page.headline }}
-              {% else %}
-                Stop worrying about gas prices.
-              {% endif %}
-            </h1>
+            <h1>Stop worrying about gas prices.</h1>
             <p class="text-right"><a href="index.html#bikes" class="btn btn-large">Find a Bicycle</a></p>
           </div>
         </div>
@@ -79,4 +90,45 @@ title: Best Bike Shop Ever
       </div>
     </section>
     
-   
+    <footer>
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span4">
+            <h3>Contact</h3>
+            <address>
+              2240 N Interstate Ave.<br />
+              Suite 240<br />
+              Portland, OR 97227 USA<br />
+              503-847-9214
+            </address>
+          </div>
+          <div class="span4">
+            <h3>Recent Blog Posts</h3>
+            
+              <h4><a href="#">The Humble Banana</a></h4>
+              <p class="muted"><em>26 Apr 2013</em></p>
+              <p>The humble banana is such a delicious fruit. It is difficult to peel one, but the payoff is immense. IMMENSE.</p>
+            
+              <h4><a href="#">String Cheese Incident</a></h4>
+              <p class="muted"><em>22 Apr 2013</em></p>
+              <p>The String Cheese Incident is everyone's favorite band, but why? Let's get to the bottom of this together.</p>
+            
+          </div>
+          <div class="span4">
+            <h3>Join our Mailing List</h3>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" id="name" class="input-block-level" placeholder="Lance Armstrong" />
+              <label for="email">Email address</label>
+              <input type="text" id="email" class="input-block-level" placeholder="lance@email.com" />
+              <p class="text-right"><button type="submit" class="btn btn-large">Submit</button></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
